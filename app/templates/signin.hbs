@@ -1,0 +1,23 @@
+{{outlet}}
+
+<form class="login">
+  <h3>Log in to BettorHalf</h3>
+  {{input
+      type='text'
+      class='form-control'
+      value=email
+      placeholder="Email address"
+  }}
+  {{input
+    type='password'
+    class='form-control'
+    value=password
+    placeholder='password'
+}}
+<button
+  class="signinbtn"
+  {{action 'signIn' 'password'}}
+>
+  {{ 'sign-in'}} Sign In
+</button>
+</form>
