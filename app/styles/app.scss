@@ -9,12 +9,18 @@
 @import 'instructions';
 @import 'loginbuttons';
 
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+}
 
-
-body {
+body, html {
   font-family: avenir;
   background-color: $background-color;
   padding: 0;
+  margin: 0;
+  max-width: 100vw;
 
   a:hover {
     text-decoration: none;

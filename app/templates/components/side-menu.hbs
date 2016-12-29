@@ -1,0 +1,42 @@
+{{yield}}
+
+<div class="sidemenu">
+  <i {{action 'open'}} class="ion-navicon-round"></i>
+
+  <div class="menu">
+    <div class="head">
+      <i {{action 'close'}} class="ion-close-round"></i>
+      <h3>BETTORHALF</h3>
+      <h6>email</h6>
+
+      <h5>$1111</h5>
+      <p>Available</p>
+      <h5>$2222</h5>
+      <p>Invested</p>
+    </div>
+    <div class="menubody">
+      <ul>
+        {{#link-to 'funds'}} <li>Latest</li> {{/link-to}}
+        <li>Football</li>
+        <li>Basketball</li>
+        <li>Baseball</li>
+        <li>Soccer</li>
+        <li>Hockey</li>
+      </ul>
+      <hr>
+      <p class="name">username</p>
+      <ul>
+        <li>Portfolio</li>
+        <li>History</li>
+        <li>Banking</li>
+        <li>Account</li>
+        {{#if session.isAuthenticated}}
+  <small style="color: white;">Logged in as {{session.currentUser.email}}</small>
+   <button {{action "signOut"}} class="btn btn-success">Sign out</button>
+{{/if}}
+
+      </ul>
+    </div>
+
+  </div>
+</div>
