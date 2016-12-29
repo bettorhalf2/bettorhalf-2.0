@@ -1,6 +1,6 @@
 @import 'color';
-@import 'bootstrap';
-@import 'bootstrap/theme';
+// @import 'bootstrap';
+// @import 'bootstrap/theme';
 @import 'landing';
 @import 'login';
 @import 'signup';
@@ -11,7 +11,7 @@
 
 
 
-body.container-fluid {
+body {
   font-family: avenir;
   background-color: $background-color;
   padding: 0;
