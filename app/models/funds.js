@@ -1,5 +1,10 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  name: DS.attr()
+  name: DS.attr(),
+  currentInvestorCount: DS.attr(),
+  minInvestment: DS.attr(),
+  symbol: DS.attr(),
+  maxTotalInvestment: DS.attr(),
+  currentTotalInvestment: DS.attr()
 });

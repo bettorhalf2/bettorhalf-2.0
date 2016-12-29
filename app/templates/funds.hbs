@@ -1,5 +1,11 @@
 {{outlet}}
 {{side-menu}}
 {{#each model as |fund|}}
-  {{fund-card name=fund.name}}
+  {{fund-card 
+    name=fund.name
+    investors=fund.currentInvestorCount
+    min=fund.minInvestment
+    symbol=fund.symbol
+    max=fund.maxTotalInvestment
+    current=fund.currentTotalInvestment}}
 {{/each}}
