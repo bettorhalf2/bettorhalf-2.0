@@ -1,0 +1,15 @@
+form.signup {
+  width: 700px;
+  // background-color: rgba(1,1,1,.2);
+  text-align: left;
+
+  input[type=number] {
+    width: 50px;
+    display: inline;
+  }
+
+  input[type=checkbox] {
+    display: inline;
+    margin: 0 10px 20px 0;
+  }  
+}

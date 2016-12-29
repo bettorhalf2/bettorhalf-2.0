@@ -1,0 +1,26 @@
+@import 'color';
+@import 'bootstrap';
+@import 'bootstrap/theme';
+@import 'landing';
+@import 'login';
+@import 'signup';
+@import 'menu';
+@import 'card';
+@import 'instructions';
+@import 'loginbuttons';
+
+
+
+body.container-fluid {
+  font-family: avenir;
+  background-color: $background-color;
+  padding: 0;
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  button:focus {
+    outline: none;
+  }
+}

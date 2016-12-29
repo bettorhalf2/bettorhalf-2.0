@@ -1,0 +1,37 @@
+.landing {
+  width: 100vw;
+  color: white;
+  text-align: center;
+  padding-top: 25vh;
+
+  p.slogan {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .welcome {
+    font-size: 50px;
+    vertical-align: middle;
+  }
+
+  .learnmore {
+    margin: 0 auto;
+    display: block;
+    background-color: $complimentary; 
+    border: 0;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(1,1,1,.5);
+  }
+  @media (max-width: 700px) {
+    .welcome {
+      margin-top: 50px;
+      font-size: 32px;
+    }
+  }
+}
+

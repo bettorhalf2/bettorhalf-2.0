@@ -1,0 +1,46 @@
+.instructions {
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+  padding: 25vh 10px 0 10px; 
+
+  h3 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  hr {
+    margin: 40px 0;
+  }
+  @media (max-width: 700px) {
+    h3 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+.next {
+  margin-top: 40px;
+  background-color: $complimentary;
+  border-radius: 50%;
+  border: 0;
+  width: 70px;
+  height: 70px;
+  box-shadow: 1px 1px 1px rgba(1,1,1,.5);
+
+  i, a {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 70px;
+    vertical-align: middle;
+  }
+}

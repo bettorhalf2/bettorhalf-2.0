@@ -1,0 +1,23 @@
+.login-signup {
+  position: fixed;
+  bottom: 0;
+  padding: 0;
+  width: 100%;
+
+  button {
+    width: 50%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    display: block;
+    float: left;
+    background-color: $shade;
+    height: 70px;
+    color: white;
+
+    &:hover {
+      background-color: rgba(1,1,1,.5);
+    }
+  }
+}

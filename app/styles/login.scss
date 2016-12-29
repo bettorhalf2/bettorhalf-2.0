@@ -1,0 +1,38 @@
+.login, .signup {
+  margin: 20vh auto 0 auto;
+  width: 500px;
+  text-align: center;
+  color: white;
+
+  h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid white;
+    margin: 30px auto;
+    background-color: $background-color;
+    max-width: 300px;
+    color: white;
+
+    &.submit {
+      background-color: $complimentary;
+      border: none;
+      box-shadow: 1px 1px 1px rgba(1,1,1,.5);
+    }
+
+    &::placeholder {
+      color: white;
+    }
+  }
+}
+
+.signinbtn {
+  background-color: $complimentary;
+  border: none;
+  box-shadow: 1px 1px 1px rgba(1,1,1,.5);
+}

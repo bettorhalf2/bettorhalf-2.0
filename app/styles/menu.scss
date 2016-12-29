@@ -1,0 +1,61 @@
+.sidemenu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  z-index: 10;
+  transition: left 1s, box-shadow 1s;
+
+  i {
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+  }
+
+  .menu {
+    z-index: 10;
+    color: white;
+
+    .head {
+      background-color: $shade;
+      position: relative;
+      top: 0;
+      height: 250px;
+      padding: 0 10px;
+
+
+      i {
+        position: relative;
+        left: 250px;
+        top: 10px;
+        z-index: 10;
+      }
+    }
+  }
+}
+
+.menubody {
+  overflow: scroll;
+  height: calc(100vh - 250px);
+
+  ul {
+    color: black;
+    list-style-type: none;
+    font-size: 30px;
+    padding: 0;
+
+    li {
+      margin: 5px 0;
+      padding: 5px;
+
+      &:hover {
+        background-color: rgba(1,1,1,.1);
+      }
+    }
+  }
+}

@@ -12,8 +12,8 @@ module.exports = function(environment) {
       databaseURL: "https://bettor-half-70e6d.firebaseio.com",
       storageBucket: "bettor-half-70e6d.appspot.com",
       messagingSenderId: "495009639670"
-      }, 
-      torii: { xsessionServiceName: 'session' },
+      },
+      torii: { sessionServiceName: 'session' },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
