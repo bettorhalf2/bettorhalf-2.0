@@ -6,10 +6,13 @@
     <h3>{{name}}</h3>
     <p>{{symbol}}</p>
   </div>
-
-  <div class="meter">
-    <div class="amount">/${{max}}</div>
-    <div class="fill"></div>
+  
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="10"
+    aria-valuemin="0" aria-valuemax="100" style="width: calc({{current}} / {{max}} * 100%)"> 
+        ${{current}} / ${{max}}
+      <span class="sr-only">70% Complete</span>
+    </div>
   </div>
 
   <div class="investors">
