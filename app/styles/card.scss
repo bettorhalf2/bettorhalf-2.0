@@ -1,10 +1,14 @@
 .card {
-  background-color: #F4F3F5;
+  background-color: #F3F3F3;
   border-radius: 3px;
   max-width: 500px;
   margin: 20px auto;
   padding: 10px 20px;
   box-shadow: 1px 1px 1px rgba(1,1,1,.5);
+
+  a {
+    color: white;
+  }
 
   .progress {
     background-color: #E0E0E0;

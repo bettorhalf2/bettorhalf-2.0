@@ -1,0 +1,40 @@
+.fund {
+  max-width: 500px;
+  margin: 0 auto;
+  color: #000;
+
+  h5.title {
+    display: inline-block;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 6px;
+  }
+
+  hr {
+    border-top: 1px solid #000;
+  }
+
+  span.right {
+    float: right;
+  }
+
+  header {
+    text-align: center;
+  }
+}
+
+button.invest {
+  background-color: $complimentary;
+  width: 100%;
+  color: #FFFFFF;
+  box-shadow: 1px 1px 1px rgba(1,1,1,.5);
+  border: none;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: darken( $complimentary, 5% );
+  }
+}

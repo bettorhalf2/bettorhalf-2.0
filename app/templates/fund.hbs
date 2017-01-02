@@ -1,0 +1,42 @@
+{{outlet}}
+{{side-menu}}
+<div class="fund">
+  <div class="card">
+    <header> <h1> {{model.name}} </h1> </header>
+    <hr>
+
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="10"
+      aria-valuemin="0" aria-valuemax="100" style="width: calc({{model.currentTotalInvestment}} / {{model.maxTotalInvestment}} * 100%)"> 
+          ${{model.currentTotalInvestment}} / ${{model.maxTotalInvestment}}
+        <span class="sr-only">70% Complete</span>
+      </div>
+    </div>
+
+    <div class="theme">Theme: 
+      <span class="right"> {{model.sport}} </span>
+    </div>
+    <div class="min">Minimum Investment: 
+      <span class="right"> {{model.minInvestment}}</span> 
+    </div>
+    <div class="target">Target Return: 
+      <span class="right"> {{model.targetReturn}}% </span>
+    </div>
+    <div class="target">Closing Time: 
+      <span class="right"> {{model.closingTime}} </span>
+    </div>
+  </div>
+  <button class="invest">INVEST</button>
+
+  <div class="card">
+    <h5 class="title">Statistics</h5> <br>
+    Past Performance <span class="right">number %</span>
+  </div>
+
+    <div class="card">
+    <h5 class="title">Summary</h5> <br>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda alias, totam deserunt saepe harum officia est eligendi ab necessitatibus magni fugiat expedita laborum! Animi magni quaerat fuga, repellendus, dignissimos voluptatem.
+    </p>
+  </div>
+</div>
