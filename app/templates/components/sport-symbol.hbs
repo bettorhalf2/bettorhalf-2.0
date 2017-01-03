@@ -1,0 +1,15 @@
+{{yield}}
+
+{{#if (eq symbol "NCAAB")}}
+    <i class='ion-ios-basketball-outline'></i>
+  {{else if (eq symbol "NFL")}}
+    <i class='ion-ios-americanfootball-outline'></i>
+  {{else if (eq symbol "MLB")}}
+    <i class='ion-ios-baseball-outline'></i>
+  {{else if (eq symbol "NHL")}}
+    <i class='ion-ios-baseball-outline'></i>
+  {{else if (eq symbol "UEFA")}}
+    <i class='ion-ios-football-outline'></i>
+  {{else if (eq symbol "NBA")}}
+    <i class='ion-ios-basketball-outline'></i>
+{{/if}}
