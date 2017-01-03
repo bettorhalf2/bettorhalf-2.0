@@ -16,6 +16,7 @@ Router.map(function() {
   this.route('instruction3');
   this.route('fund', { path: '/funds/:fund_id' });
   this.route('football');
+  this.route('basketball');
 });
 
 export default Router;
