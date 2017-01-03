@@ -1,0 +1,12 @@
+{{outlet}}
+
+<form {{action 'createUser' on='submit'}}>
+  {{input placeholder='Name' 
+                value=name
+                class='input-group form-control'}} 
+
+  {{input placeholder='Email' 
+                value=email
+                class='input-group form-control'}} 
+  <input type="submit" class='btn btn-primary'>
+</form>

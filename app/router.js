@@ -20,6 +20,7 @@ Router.map(function() {
   this.route('baseball');
   this.route('soccer');
   this.route('hockey');
+  this.route('users');
 });
 
 export default Router;
