@@ -1,0 +1,14 @@
+{{outlet}}
+{{side-menu}}
+{{#each model as |fund|}}
+  {{#if (eq fund.symbol "MLB")}}
+    {{fund-card 
+      name=fund.name
+      investors=fund.currentInvestorCount
+      min=fund.minInvestment
+      symbol=fund.symbol
+      max=fund.maxTotalInvestment
+      current=fund.currentTotalInvestment
+      id=fund.id}}
+  {{/if}}
+{{/each}}
