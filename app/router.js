@@ -18,6 +18,7 @@ Router.map(function() {
   this.route('football');
   this.route('basketball');
   this.route('baseball');
+  this.route('soccer');
 });
 
 export default Router;
