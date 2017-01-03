@@ -381,4 +381,10 @@
 
   <button class='btn btn-default'
   {{action 'submission'}} value="sign up">Sign Up</button>
+
+
+
+  {{input value=email placeholder='email'}}
+{{input value=password type='password' placeholder='password'}}
+<button class="btn btn-primary auth-as-password" {{action 'signUp' }}>signup</button>
 </form>
