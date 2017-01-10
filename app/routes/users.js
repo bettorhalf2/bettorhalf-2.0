@@ -9,11 +9,11 @@ export default Ember.Route.extend({
     createUser() {
       let record = this.store.createRecord('user', {
         name: 'yo',
-        email: 'Lorem ipsum',
-        password: '123',
+        email: 'Lorem@ipsum.com',
+        password: '123456',
         availableBalance: 1200
       });
-      return record.save().then().catch(e => {console.log(e.errors);});
+      return record.save().then().catch(e => {console.log(e.errors)});
     }
   }
   

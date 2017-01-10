@@ -28,10 +28,19 @@ export default Ember.Controller.extend({
       const pass = this.get('password');
 
       auth.createUserWithEmailAndPassword(email, pass).then((userResponse) => {
+
         const user = this.store.createRecord('user', {
           id: userResponse.uid,
           email: userResponse.email,
         });
+
+        let record = this.store.createRecord('user', {
+          uid: userResponse.uid,
+          email: userResponse.email,
+          availableBalance: 100000,
+        });
+        record.save();
+
         user.save().then(() => {
           this.get('session').open('firebase', {
             provider: 'password',
@@ -41,7 +50,8 @@ export default Ember.Controller.extend({
             this.transitionToRoute('tasks');
           });
         });
-      }).catch((error) => {
+      })
+      .catch((error) => {
         console.log('error: ', error);
         const errorCode = error.code;
         if (errorCode === 'auth/email-already-in-use'){
