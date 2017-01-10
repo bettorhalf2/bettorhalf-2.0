@@ -383,10 +383,10 @@
   {{action 'submission'}} value="sign up">Sign Up</button>
 
 
-
-  {{input value=email placeholder='email'}}
+{{input value=name placeholder='name'}}
+{{input value=email placeholder='email'}}
 {{input value=password type='password' placeholder='password'}}
-<button class="btn btn-primary auth-as-password" {{action 'signUp'}} {{action 'createUser'}} >
+<button class="btn btn-primary auth-as-password" {{action 'signUp'}}>
     signup
 </button>
 </form>

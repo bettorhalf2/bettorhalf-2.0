@@ -26,6 +26,7 @@ export default Ember.Controller.extend({
       const auth = this.get('firebaseApp').auth();
       const email = this.get('email');
       const pass = this.get('password');
+      const name = this.get('name');
 
       auth.createUserWithEmailAndPassword(email, pass).then((userResponse) => {
 
@@ -38,8 +39,12 @@ export default Ember.Controller.extend({
           uid: userResponse.uid,
           email: userResponse.email,
           availableBalance: 100000,
+          investedBalance: 100000,
+          name: name,
+          approvedBettor: false,
+
         });
-        record.save();
+        record.save().then().catch(e => {console.log(e.errors);});
 
         user.save().then(() => {
           this.get('session').open('firebase', {
