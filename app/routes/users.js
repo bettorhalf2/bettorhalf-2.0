@@ -13,7 +13,7 @@ export default Ember.Route.extend({
         password: '123',
         availableBalance: 1200
       });
-      return record.save().then().catch(e => {console.log(e.errors)});
+      return record.save().then().catch(e => {console.log(e.errors);});
     }
   }
   
