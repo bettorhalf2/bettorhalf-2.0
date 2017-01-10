@@ -2,7 +2,7 @@ import Ember from 'ember';
 import $ from 'jquery';
 
 export default Ember.Component.extend({
-session: Ember.inject.service('session'),
+  session: Ember.inject.service(),
 
   actions: {
     open () {

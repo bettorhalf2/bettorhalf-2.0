@@ -1,6 +1,9 @@
 {{outlet}}
-{{side-menu}}
-{{#each model as |fund|}}
+{{#each user as |user|}}
+  {{user.email}}
+{{/each}}
+{{side-menu user=user}}
+{{#each funds as |fund|}}
   {{fund-card 
     name=fund.name
     investors=fund.currentInvestorCount
