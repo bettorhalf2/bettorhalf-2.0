@@ -56,6 +56,7 @@ export default ToriiFirebaseAdapter.extend({
    * @param  {Object} authData
    * @return {Promise<Object>} The user
    */
+
   _findOrCreateUser(authData) {
     let store = this.get('store');
 
